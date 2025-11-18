@@ -5,6 +5,8 @@ ForeverChat is a fully local, Ollama-powered conversational engine with long-ter
 
 It works as both a **Flask web API** and a full **CLI chat interface**, giving you ChatGPT-style persistence with zero cloud dependency.
 
+You need ollama (make sure to 'ollama serve' if you need to) and gemma3:12b to run it out of the box , you can change to whatever model you want though.
+
 'This software works
 but it's not done
 rip it apart
