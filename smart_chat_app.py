@@ -44,11 +44,11 @@ DEFAULT_MAX_TOKENS = 4000
 # Per-model context window hints (num_ctx) so we can size our context manager
 # and Ollama requests appropriately. Adjust these to match your local models.
 MODEL_CONTEXT_CONFIG: Dict[str, int] = {
-    # Gemma examples
-    "gemma3:12b": 128000,
-    # Llama examples
-    "llama3.2:3b": 128000,
-    "llama3.1:8b": 128000,
+    # Gemma examples - using reasonable context sizes to avoid freezing
+    "gemma3:12b": 8192,
+    # Llama examples - using reasonable context sizes to avoid freezing
+    "llama3.2:3b": 8192,
+    "llama3.1:8b": 8192,
     # Pervert examples LOL
     "HammerAI/mythomax-l2": 8000,
 }
